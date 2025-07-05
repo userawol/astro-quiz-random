@@ -1,0 +1,78 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+	<title>Quiz App</title>
+    <style>
+/*	import it from google fonts or use any font*/
+	@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@700&display=swap');
+	@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');</style>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+	<div class="container">
+		<div class="progress-bar"></div>
+		<div class="quiz-header">
+			<div class="heading">MCQ's Quiz</div>
+			<div class="total-q">0/0</div>
+		</div>
+		<div class="quiz-body">
+			<div class="question">
+				<ul>
+<!--					now add question you want to make quiz-->
+					<li answer-number="1">
+						<div class="q"> 2 AM pe kiski galti hoti hai?</div>
+						<button type="button">Mercury ki</button>
+						<button type="button">Instagram algorithm ki</button>
+						<button type="button">Uski jo “seen” karke so gaya</button>
+						<button type="button">Tumhari khud ki</button>
+					</li>
+					<li answer-number="2">
+						<div class="q">toxic self‑care routine💅</div>
+						<button type="button">Tarot card binge</button>
+						<button type="button">Sad reels + comfort food</button>
+						<button type="button">Manifesting bolke stalk</button>
+						<button type="button">3 AM birth chart analysis</button>
+					</li>
+					<li answer-number="3">
+						<div class="q">fav excuse for chaos?</div>
+						<button type="button">Retrograde chal raha hai</button>
+						<button type="button">Nazar lag gayi</button>
+						<button type="button">Algorithm ki galti hai</button>
+						<button type="button">Main hi toxic hoon</button>
+					</li>
+					<li answer-number="4">
+						<div class="q">toxic love lang?</div>
+						<button type="button"> Seen karke reply na karna</button>
+						<button type="button">birth sign puchke judge karna</button>
+						<button type="button">roasting him</button>
+						<button type="button">I belong to west bengal</button>
+					</li>
+					<li answer-number="3">
+						<div class="q">toxic productivity hack?</div>
+						<button type="button">Vision board bnake bhul jana</button>
+						<button type="button">Manifestation journal bharke Netflix</button>
+						<button type="button">I'm interested likhkr mails check na krna</button>
+						<button type="button">Calendar me “self-care” likhke nap lena</button>
+					</li>
+					<li answer-number="1">
+						<div class="q"> toxic zodiac energy🥰?</div>
+						<button type="button">Scorpio overthinking + overfeeling</button>
+						<button type="button">Leo main character vibes only</button>
+						<button type="button">Cancer crying professionally</button>
+						<button type="button">Gemini flirting then ghosting</button>
+					</li>
+<!--					now I am adding question quickly-->
+				</ul>
+			</div>
+		</div>
+		<div class="quiz-footer">
+			<div class="timeout">Time Left: <span>20</span>s</div>
+			<button type="button" onClick="showQ()" id="showQ">Next</button>
+			<button type="button" onClick="result(true)" id="result" style="display: none">Get Result</button>
+		</div>
+	</div>
+    <script src="script.js"></script>
+</body>
+</html>
